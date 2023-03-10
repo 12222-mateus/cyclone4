@@ -1,0 +1,22 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+
+ENTITY testinvert IS
+PORT (
+	pb : IN STD_LOGIC;
+	led1 : OUT STD_LOGIC;
+	led2 : OUT STD_LOGIC
+	
+
+
+);
+
+
+END testinvert;
+
+ARCHITECTURE behavioral OF testinvert IS 
+BEGIN 
+	led1 <=   pb;
+	led2 <= NOT pb;
+	
+END behavioral;
